@@ -183,8 +183,23 @@
     <Compile Include="Migrations\201904062025072_InitialModel.Designer.cs">
       <DependentUpon>201904062025072_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904071059224_CreateGigTable.cs" />
+    <Compile Include="Migrations\201904071059224_CreateGigTable.Designer.cs">
+      <DependentUpon>201904071059224_CreateGigTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904071132049_RequiredFieldsGigAndGenre.cs" />
+    <Compile Include="Migrations\201904071132049_RequiredFieldsGigAndGenre.Designer.cs">
+      <DependentUpon>201904071132049_RequiredFieldsGigAndGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904071146511_PopulateGenres.cs" />
+    <Compile Include="Migrations\201904071146511_PopulateGenres.Designer.cs">
+      <DependentUpon>201904071146511_PopulateGenres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Gig.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -212,7 +227,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -266,6 +283,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201904062025072_InitialModel.resx">
       <DependentUpon>201904062025072_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904071059224_CreateGigTable.resx">
+      <DependentUpon>201904071059224_CreateGigTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904071132049_RequiredFieldsGigAndGenre.resx">
+      <DependentUpon>201904071132049_RequiredFieldsGigAndGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904071146511_PopulateGenres.resx">
+      <DependentUpon>201904071146511_PopulateGenres.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
